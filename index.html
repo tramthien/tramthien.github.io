@@ -2,76 +2,89 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>WDB2</title>
-	<link href="Sitewb2.css" rel="stylesheet"/>
+<title>Untitled Document</title>
+<link href="site.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11">	</script>
+	 <script src="js/jquery-2.1.4.min.js"></script>
 </head>
-
 <body>
-	<header>
-		<h1>All about coffee</h1>
-		<nav>
-			<ul>
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Roasting</a>
-				</li>
-				<li>
-					<a href="#">Grinding</a>
-				</li>
-				<li>
-					<a href="#">Brewing</a>
-				</li>
-				<li>
-					<a href="#">Drinks</a>
-				</li>
-				<li>
-					<a href="#">Coffee Survey</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<h1>All about coffee</h1>
-	<aside>
-		<blockquote>
-		We want to do a lot of stuff; we're not in great shape. We didn't get a good night's sleep. We're a little depressed. Coffee solves all these problems in one delightful little cup.
-		</blockquote>
-		- Jerry Seinfeld -
-	</aside>
-	<section>
-		<img class="photo-left" src="Image/coffee-cup.png" alt="hình ly cà phê" width="128" height="128" />
-		<p>
-		Coffee preparation is the process of turning coffee beans into a beverage. While the particular steps vary with the type of coffee and with the raw materials, the process includes four basic steps; raw coffee beans must be <a href="#">roasted</a>, the roasted coffee beans must then be <a href="#">ground</a>, the ground coffee must then be mixed with hot water for a certain time (<a href="#">brewed</a>), and finally the liquid coffee must be separated from the used grounds.
-		</p>
-		<p>Coffee is usually brewed immediately before drinking. In most areas, coffee may be purchased unprocessed, or already roasted, or already roasted and ground. Coffee is often vacuum packed to prevent oxidation and lengthen its shelf life.
-		</p>
-		<p>To learn more about coffee, just browse our informative site, or you can visit 
-http://en.wikipedia.org/wiki/Coffee_preparation wikipedia for even more.</p>
+	<section id="trangchu">
+		<h1 class="tieude" id="tieude5">I'm Designer</h1>
+		<script>
+		 var typed3 = new Typed('#tieude5', {
+    strings: ['I am Designer', 'I am Developer','I am Musician'],
+    typeSpeed: 0,
+    backSpeed: 0,
+    smartBackspace: true, // this is a default
+    loop: true
+  });
+		</script>
+		<div id="mangxahoi">
+			<a class="mxh iconfb">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a class="mxh">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a class="mxh">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a class="mxh">
+				<i class="fab fa-google-plus-g"></i>
+			</a>
+			<a class="mxh">
+				<i class="fab fa-behance"></i>
+			</a>
+			<a class="mxh">
+				<i class="fab fa-dribbble"></i>
+			</a>
+		</div>
+		<div id="chuabutton">
+		<a id="movedown" href="#hinhthay">
+			<i class="fas fa-chevron-down"></i>
+		</a>
+		</div>
 	</section>
-	<footer>
-	<nav>
-			<ul>
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Roasting</a>
-				</li>
-				<li>
-					<a href="#">Grinding</a>
-				</li>
-				<li>
-					<a href="#">Brewing</a>
-				</li>
-				<li>
-					<a href="#">Drinks</a>
-				</li>
-				<li>
-					<a href="#">Coffee Survey</a>
-				</li>
-			</ul>
-		</nav>
-	</footer>
+	<button id="movetop" onclick="topFunction()">
+		<i class="fas fa-arrow-alt-to-top"></i>
+	</button>
+	<section id="hinhthay">
+		<div id="hinhbentrai">
+			<img src="Image/about.jpg" alt="hình thầy"/>
+		</div>
+		<div id="chubenphai">
+			<h1>
+				I am Dev and Creative
+			</h1>
+			<br>
+			<p>
+				Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate.
+			</p>
+			<br>
+			<p>
+				er extensive perceived may any sincerity extremity. Indeed add rather may pretty see. Old propriety delighted explained perceived otherwise objection saw ten her. Doubt merit sir the right these alone keeps. By sometimes intention smallness he northward.
+			</p>
+		</div>
+	</section>
+	<script>
+				window.onscroll = function () {
+					scrollFunction()
+				};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("movetop").style.display = "block";
+					} else {
+						document.getElementById("movetop").style.display = "none";
+					}
+				}
+
+								function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+			</script>
+	
 </body>
 </html>
